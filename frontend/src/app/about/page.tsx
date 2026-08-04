@@ -22,13 +22,24 @@ export default function AboutPage() {
           The goal is to present AI in a way that is interpretable, actionable, and visually stunning, matching the aesthetic of enterprise SaaS products.
         </p>
         
-        <div className="border-t border-panelBorder pt-6 flex gap-4">
-          <a href="#" className="flex items-center gap-2 bg-[#121827] border border-panelBorder px-4 py-2 rounded-lg text-sm text-white hover:bg-white/5 transition-colors">
-            <Code2 className="w-4 h-4" /> Source Code
-          </a>
-          <a href="https://github.com/PraveenChigurla?tab=repositories" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-[#121827] border border-panelBorder px-4 py-2 rounded-lg text-sm text-white hover:bg-white/5 transition-colors">
-            <User className="w-4 h-4 text-blue-500" /> Developer Profile
-          </a>
+        <div className="border-t border-panelBorder pt-6 flex flex-col gap-6">
+          <div>
+            <a href="#" className="inline-flex items-center gap-2 bg-[#121827] border border-panelBorder px-4 py-2 rounded-lg text-sm text-white hover:bg-white/5 transition-colors">
+              <Code2 className="w-4 h-4" /> Source Code
+            </a>
+          </div>
+          
+          <div>
+            <h4 className="text-sm font-semibold text-slate-300 mb-3 uppercase tracking-wider">Developers</h4>
+            <div className="flex gap-4">
+              <a href="https://github.com/PraveenChigurla?tab=repositories" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-[#121827] border border-panelBorder px-4 py-2 rounded-lg text-sm text-white hover:bg-white/5 transition-colors">
+                <User className="w-4 h-4 text-blue-500" /> Praveen Chigurla
+              </a>
+              <a href="https://github.com/KhushiKore?tab=repositories" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-[#121827] border border-panelBorder px-4 py-2 rounded-lg text-sm text-white hover:bg-white/5 transition-colors">
+                <User className="w-4 h-4 text-blue-500" /> Khushi Kore
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </motion.div>
